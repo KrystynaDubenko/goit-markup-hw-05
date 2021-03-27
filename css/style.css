@@ -643,28 +643,6 @@ section {
     letter-spacing: 0.03em;
     color: var(--secondary-text-color);
 }
-.work-variations-wrapper {
-    position: relative;
-    flex-basis: calc(100%/3 - 30px);
-    margin-left: 30px;
-    margin-top: 30px;
-}
-.work-variations {
-    position: absolute;
-    width: 199px;
-    height: 16px;
-    left: 701px;
-    top: 1462px;
-    font-family: var(--main-font);
-    
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 1.14;
-    text-align: center;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: #FFFFFF;
-}
 /*===========End Advantages section================ */
 
 .body-title {
