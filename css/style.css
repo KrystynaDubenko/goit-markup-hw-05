@@ -134,29 +134,27 @@ section {
 .contact-link:hover,
 .contact-link:focus {
     color:var(--focus-color );
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contact-link:hover .icon-envelope,
 .contact-link:focus .icon-envelope {
     fill:  var(--focus-color);
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contact-link:hover .icon-smartphone,
 .contact-link:focus .icon-smartphone {
     fill:  var(--focus-color);
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .im-here:hover,
 .im-here:focus {
     color: var(--focus-color );
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .im-here:active {
     color: var(--focus-color );
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .current {
     position: relative;
     color: var(--focus-color );
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .current::after {
     content: '';
@@ -169,29 +167,31 @@ section {
     position:absolute;
     left: 0;
     bottom: 0;
-    
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-envelope {
     margin-right: 10px;
     align-items: center;
     fill: var(--secondary-text-color);
+
+    transition-property: color;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .icon-smartphone {
     margin-right: 10px;
     align-items: center;
     fill:var(--secondary-text-color);
+
+    transition-property: color;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .icon-envelope:hover,
 .icon-envelope:focus {
     color: var(--focus-color);
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .icon-smartphone:hover,
 .icon-smartphone:focus {
     color: var(--focus-color);
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /*===========End Header================ */
 
@@ -240,11 +240,12 @@ section {
     padding: 10px 32px;
     margin-left: auto;
     margin-right: auto;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .main-button:hover,
 .main-button:focus {
     background-color: var(--focus-color);
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /*===========End Hero================ */
 
@@ -382,20 +383,22 @@ section {
     height: 44px;
     border-radius: 50%;
     background-color: var(--standart-color);
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-link:hover .social-icon,
 .social-link:focus .social-icon{
     fill: var(--standart-color);
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-icon {
     fill: rgba(175, 177, 184, 1);
 
+    transition-property: background-color;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-link:hover,
 .social-link:focus {
     background-color: var(--focus-color);
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .clients-list {
     display: flex;
@@ -423,19 +426,25 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
+    
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .clients-logo {
     fill: var(--clients-logo-color);
+    
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.clients-link:hover .clients-logo,
-.clients-link:focus .clients-logo {
+.clients-logo:hover,
+.clients-logo:focus {
     fill: var(--focus-color);
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.clients-link:hover .clients-box,
-.clients-link:focus .clients-box {
+.clients-box:hover,
+.clients-box:focus {
     border-color: var(--focus-color);
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.clients-box:hover .clients-logo,
+.clients-box:focus .clients-logo {
+    fill: var(--focus-color);
 }
 /*===========End Our team================ */
 
@@ -449,16 +458,16 @@ section {
 }
 .main-items {
     margin-right: 8px;
+    
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .main-items:hover,
 .main-items:focus {
     background-color: var(--focus-color);
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .works-item:hover,
 .works-item:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .work-content-wrapper {
     padding-top: 20px;
@@ -484,14 +493,15 @@ section {
     border-radius: 4px;
     display: flex;
     flex-direction: row;
+    border: hidden;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1); background-color: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-btn:hover,
 .portfolio-btn:focus {
     background-color: var(--focus-color );
     color: var(--standart-color);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .works-set {
     display: flex;
@@ -506,6 +516,7 @@ section {
     margin-top: 30px;
     margin-left: 30px;
     flex-basis: calc((100% - 90px) / 3);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .work1 {
     width: 100%;
@@ -596,7 +607,6 @@ section {
 .overlay-wrapper:focus .overlay {
     opacity: 1;
     transform: translateY(0%);
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /*===========Work gallery================ */
 
@@ -714,6 +724,8 @@ section {
     height: 44px;
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.1);
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-icons-list:not(:last-child) {
     margin-right: 10px;
@@ -721,16 +733,15 @@ section {
 
 .footer-icons {
     fill: var(--standart-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-icons-link:hover .footer-icons-color,
 .footer-icons-link:focus .footer-icons-color {
     background-color: var(--focus-color);
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-icons-link:hover,
 .footer-icons-link:focus  {
     background-color: var(--focus-color);
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /*===========End Footer================ */
 
@@ -759,6 +770,10 @@ section {
     transform: translate(-50%, -50%) scale(1);
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
+}
+.modal:hover,
+.modal:focus {
+    border-color: var(--focus-color);
 }
 .modal-close-button {
     position: absolute;
